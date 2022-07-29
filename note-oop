@@ -1,0 +1,122 @@
+1. Class
+	Là một cách khai báo để tạo ra các object tương tự 
+	Trong một file có thể có nhiều class nhưng chỉ có duy nhất 1 class được
+    khai báo public
+	Class được khai báo public phải trùng với tên file
+	Trường hợp không có class nào public thì tên file để thế nào cũng được
+	Hàm main bắt buộc phải nằm trong một public class
+	Tên class viết hoa chữ cái đầu của mỗi từ, các từ viết liền nhau và 
+    phải là danh từ hoặc cumj danh từ.
+
+2. Access Modifiers
+    a. Public có thể được truy cập từ mọi nơi
+
+    b. Protected 
+	- trong cùng package
+	- các class con ngoài package
+
+    c. Default
+	- chỉ từ trong cùng package
+
+    d. Private
+	- chỉ trong cùng class
+
+3. Attributes
+	Mặc định thì các kiểu số được gán bằng 0, kiểu boolean = false
+   kiểu String = null.
+	
+4. Abstract methods
+	Là dạng phương thức đặc biệt, không có body, kết thúc bằng ;
+
+5. Constructors
+	Là phương thức để khởi tạo object.
+	Nó không có kiểu trả về, kể cả void
+	mọi class đều có constructors kể cả abstract
+	mặc định thì class nào cũng có hàm khởi tạo, khi mình khai báo 1 hàm 
+    khởi tạo thì hàm mặc định sẽ bị loại bỏ.
+
+6. Interface
+	Là một kiểu trừu tượng tham chiếu trong java
+	nó tương tự như class nhưng có điểm khác biệt
+	nó có thể hiểu là tập hợp các abstract methods
+
+7. Thuộc tính của interface:
+	Mặc định là public static final, kể cả không viết ra thì nó vẫn có đặc
+    điểm như thế
+	Tên thuộc tính phải viết hoa toàn bộ, các từ nối nhau bằng dấu gạch 
+    dưới ("_")
+	Thuộc tính phải được khởi tạo giá trị	
+
+8. Phương thức của Interface:
+	mặc định là public abstract, không viết thì java cũng tự hiểu như thế	
+	
+9. Adstract class
+	là class có phương thức abstract
+	nó không thể dùng từ khóa new để khởi tạo object bình thường được
+
+10. Inheritance (Tính kế thừa)
+	có thể hiểu như cách ta sử dụng lại tài nguyên của class
+	tính thừa kế được thể hiện qua 2 từ khóa là extend và implement
+	Mặc định các class đều được thừa kế một hàm khởi tạo mặc định
+	tất cả class đều thừa kế từ class Object trong gói java.lang
+	Khi mà extend một abstract class hay implement 1 interface thì bắt buộc
+    phải override tất cả abstract method và implement phần body
+	Khi kế thừa cùng tên (class-class hoặc interface-interface) thì dùng 
+    từ khóa extend, còn lại thì dùng implements
+	
+	****Tính kế thừa giúp tăng tính tái sử dụng tài nguyên,
+
+11. Abstraction (tính trừu tượng)
+	CÓ thể hiểu là cách mà ta che dấu các cách thức thực hiện của chương
+    trình với người dùng. Người dùng chỉ nhìn thấy chức năng mà không biết 
+    cụ thể nó thực hiện thế nào.
+	Trong java, tính trừu tượng được thể hiện qua abstract class và interface
+	abstract class là class chứa abstract method, khi một class extends 1
+    abstract class thì nó phải override toàn bộ abstract method của lớp cha,
+    nếu không, nó cũng phải là một abstract class.
+	các method abstract chỉ khai báo chứ không định nghĩa
+	các abstract class không thể tạo ra object của nó
+	    ví dụ: 
+		public abstract class A{
+		    //
+		}
+
+		public class B extends A{
+		    //
+		} 
+
+		Khởi tạo object:   A a = new B();
+		
+	Mục đích của tính trừu tượng là tăng khả năng mở rộng của hệ thống, như
+    khi một class abstract mở rộng các method abstract thì các subclass cũng 
+    dễ dàng mở rộng các hành vi của nó.
+	Ngoài ra, nó còn giảm độ phức tạp và tăng tính hiệu quả sử dụng của phần
+    mềm, đồng thời nâng cao tính bảo mật
+
+12. Encapsulation (tính đóng gói)
+	Được thể hiện qua 2 khía cạnh
+		- Các thuộc tính của class thường để dạng private
+	          Khi cần sử dụng dữ liệu thì dùng getter và setter.
+		- Các class và interface được chia thành các package khác nhau
+		từ ấy, khi muốn sử dụng các class hay interface đấy thì phải 
+		thông qua các access interface.
+
+	Ý nghĩa: 
+		Tăng cường tính bí mật thông tin nhờ vào việc che dấu đi các 
+		dữ liệu của object
+
+	??????getter, setter là public, thế thì thuộc tính để private có ý nghĩa gì đâu????
+
+13. Polymorphism (tính đa hình)
+	Trong java, tính đa hình thể hiện ở việc có thể sử dụng các phương thức
+    cùng tên với những thể hiện khác nhau.
+	Ngoài ra, có thể tạo một object của class con nhưng gán vào 1 biến có
+    có kiểu là class cha  List<> list = new ArrayList<>();
+
+	Ý nghĩa: Tính đa hình giúp tăng tính mềm dẻo của hệ thống, ta có thể 
+		sử dụng các phương thức, object cùng tên một cách thoải mái, 
+		tùy vào tình huống mà nó có những hành vi khác nhau.
+
+14. So sánh tính trừu tượng và tính đóng gói
+	Cùng là che dấu, nhưng tính trừu tượng che dấu hành vi, cách thức 
+    thực hiện, còn tính đóng gói che dấu dữ liệu

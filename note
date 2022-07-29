@@ -1,0 +1,17 @@
+******* Java Core ******
+1. Jar file
+	- JAR là 1 file zip có chứa các class đã được biên dịch
+	- Nó được dùng trong runtime mà không cần biên dịch 
+	- Nó tồn tại dưới 2 dạng là dạng chạy executable and runnable, trường
+	hợp này thì nó cần một file định nghĩa phương thức main. Dạng 2 là dạng
+	giống như thư viện được thêm vào project để thêm những chức năng.
+
+2. Wrapper classes
+	đóng gói các kiểu dữ liệu nguyên thủy vào các class để có thể sử dụng
+	như một object.
+	Ngoài ra, các wrapper class có các phương thức hỗ trợ việc xử lý dữ liệu
+	
+	Autoboxing là quá trình tự động convert từ kiểu dữ liệu -> class
+	Unboxing là ngược lại
+
+
