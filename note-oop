@@ -120,3 +120,45 @@
 14. So sánh tính trừu tượng và tính đóng gói
 	Cùng là che dấu, nhưng tính trừu tượng che dấu hành vi, cách thức 
     thực hiện, còn tính đóng gói che dấu dữ liệu
+
+15. Overload
+	Là khi một class có thể có nhiều phương thức cùng tên nhưng
+    khác tham số.
+
+16. Override
+	Là cách khai báo phương thức trong class con có tên và 
+    tham số giống với class 
+	access modifier của overriding method phải lớn hơn hoặc bằng
+    của overridden method.
+	Các method private, static hoặc final không thể là overriden
+	Exception của overriding method phải giống hoặc là con của 
+    exception của overridden method tương ứng.
+
+17. Static key word
+	Là từ khóa để đánh dấu rằng đây là tài nguyên dùng chung của
+    class. Bình thường, các phương thức hay thuộc tính chỉ thuộc về
+    một object, nhưng tài nguyên static thì mọi object có thể dùng
+    chung.
+
+	Các nguyên tắc khi dùng static:
+	    - Một phương thức static không thể dùng một biến 
+	    non-static hoặc gọi một phương thức non-static vì phương
+	    thức static tồn tại mà không cần 1 object nào cả, còn các
+	    cái kia thì cần 1 đối tượng cụ thể. Nó có thể xảy ra 
+	    trường hợp phương thức static gọi đến 1 cái gì đấy mà
+	    object chứa cái đấy lại chưa tồn tại, dẫn đến việc không
+	    gọi được.
+	    - Tài nguyên static có thể được gọi trực tiếp từ tên class
+	    hoặc từ bất kì object nào nên nó có thể vô tình bị thay 
+	    đổi giá trị => nên thận trọng
+	    - 
+	    
+18. Final key word
+	Là từ khóa dùng để khai báo các phương thức hay thuộc tính cố
+    định. Một tài nguyên được khai báo final sẽ không thể bị thay đổi
+    giá trị từ bất kì nơi nào khác. Nó thường dùng với các giá trị 
+    được sử dụng lại nhiều lần. Khi cần thay đổi giá trị của nó, chỉ
+    cần thay đổi ở chỗ khai báo nó.
+	Method được khai báo final không thể là overridden, nó chỉ 
+    được thừa kế mà không thể được chỉnh sửa
+	Class được khai báo final sẽ không thể được thừa kế.
