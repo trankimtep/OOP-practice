@@ -1,0 +1,10 @@
+Đề bài:
+1. Hãy xây dựng lớp DaGiac gồm có các thuộc tính
+– Số cạnh của đa giác
+– Mảng các số nguyên chứa kích thước các cạnh của đa giác
+Các phương thức:
+– Tính chu vi
+– In giá trị các cạnh của đa giác.
+2. Xây dựng lớp TamGiac kế thừa từ lớp DaGiac, trong đó viết đè các hàm tính chu vi và xây dựng thêm phương thức kiểm tra tính hợp lệ 3 cạnh của tam giác, tính diện tích tam giác
+3. Xây dựng một ứng dụng Java để nhập vào một dãy gồm n tam giác rồi in ra màn hình các cạnh của các tam giác có diện tích lớn nhất.
+Gợi ý: 3 cạnh tam giác là hợp lệ nếu tổng hai cạnh bất kỳ lớn hơn cạnh còn lại. Diện tích tam giác tính theo công thức heron.

@@ -1,0 +1,6 @@
+Đề bài: Để xử lý văn bản người ta xây dựng lớp văn bản có thuộc tính riêng là một xâu ký tự. Hãy:
+1. Xây dựng các toán tử tạo lập: VanBan(), VanBan (String noidung)
+2. Xây dựng phương thức đếm số từ của một xâu.
+3. Xây dựng phương thức đếm số ký tự H (không phân biệt chữ thường, chữ hoa) của xâu.
+4. Chuẩn hoá một xâu theo tiêu chuẩn (Ở đầu và cuối của xâu không có ký tự trống, ở giữa xâu không có hai ký tự trắng liền nhau).
+Gợi ý: Tham chiếu các phương thức của class String

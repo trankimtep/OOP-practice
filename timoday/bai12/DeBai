@@ -1,0 +1,8 @@
+Đề bài: Xây dựng lớp Ma Trận có các thuộc tính riêng sau:
+– Số dòng, số cột của ma trận.
+– 1 mảng 2 chiều để lưu trữ các phần tử của ma trận.
+Hãy:
+– Hãy xây dựng toán tử tạo lập: MaTran(), MaTran(int m,int n)
+– Xây dựng phưong thức nhập vào ma trận rồi hiện thị ra màn hình (hiển thị đúng định dạng ma trận)
+– Xây dựng phương thức tính tổng hiệu tích của 2 ma trận
+– Cài đặt chương trình: Nhập vào 2 ma trận A,B sau đó tính tổng: C=A+B và hiển thị ra màn hình.

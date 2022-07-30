@@ -1,0 +1,12 @@
+Đề bài: Mỗi một điểm trong mặt phẳng được xác đinh duy nhất bởi hai giá trị là hoành độ và tung độ.
+1. Hãy xây dựng lớp Diem cùng với chứa các đối tượng diểm trong mặt phẳng và xây dựng phương thức sau:
+– Toán tử tạo lập
+– Phương thức in một đối tượng Diem (in ra hoành độ, tung độ)
+– Tính khoảng cách giữa hai điểm
+2. Mỗi tam giác trong mặt phẳng được xác định bởi 3 điểm. Hãy xây dựng lớp TamGiac với 3 thuộc tính riêng là 3 đối tượng thuộc lớp Diem và các phương thức:
+– Xây dựng các toản tử tạo lập:
+TamGiac();
+TamGiac(Diem d1, Diem d2, Diem d3);
+– Tính diện tích tam giác
+– Tính chu vi của tam giác
+Gợi ý: Khoảng cách giữa 2 điểm A(x1, y1), B(x2,y2) tính theo công thức: d= sqrt((x1-x2)^2 + (y1-y2)^2)
