@@ -14,4 +14,20 @@
 	Autoboxing là quá trình tự động convert từ kiểu dữ liệu -> class
 	Unboxing là ngược lại
 
+3. Garbage Collection
+	
+	a. Unreferenced Objects
+	    Là những object bị gán giá trị null, bị gán giá trị cho
+	    object khác hoặc bị khai báo mà không có tên object
 
+	b. Garbage collector 
+	    Là phương thức tự động dọn dẹp các unreferened object ra
+	    khỏi heap để giải phóng bộ nhớ
+
+	c. Phương thức finalize()
+	    Được gọi ngay trước khi object bị dọn dẹp bởi GC
+	    Nó dùng để ra tín hiệu rằng object này cần được loại bỏ
+	
+	d. Phương thức gc()
+	    Được gọi từ system, nó dùng để khởi tạo tiến trình dọn
+	    dẹp
